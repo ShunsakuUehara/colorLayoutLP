@@ -1,0 +1,171 @@
+<!DOCTYPE html>　
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>配色＆レイアウト</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<body>
+  <header>
+    <!-- 文書内の主要なナビゲーションのセクション -->
+    <nav class="nav_all">
+      <ul class="nav_list">
+        <li class="nav_item"><a class="nav_link" href="#menu">メニュー</a></li>
+        <li class="nav_item"><a class="nav_link" href="#instagram">Instagram</a></li>
+        <li class="nav_item"><a class="nav_link" href="#access">アクセス</a></li>
+        <li class="nav_item"><a class="nav_link" href="#reserve">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="top1">
+      <div class="top1 top1-bg">
+        <div class="top1-txt">
+          <h1>都内のカフェ</h1>
+        </div>
+      </div>
+    </section>
+    <section class="top2">
+      <div class="top2-txt">
+        <h2>都会でゆったり贅沢な時間を</h2>
+        <p>都内のカフェでは、ご来店いただいたお客様に<br>
+          いつまでもいたいと思っていただけるような、<br>
+          ホッするような空間の提供を目指しています。<br>
+          コーヒーや本に囲まれて、まったりした時間を過ごしてみませんか。</p>
+      </div>
+      <div class="top2-img">
+        <img src="img/cafe_2.png" class="top2-img" alt="コーヒーの画像">
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div calss="inner">
+        <div clss="menu-title">
+          <h2 class="font1">メニュー</h2>
+        </div>
+        <div class="menu-all">
+          <div class="food menu-block">
+            <h2>フード</h2>
+            <p>food1</p>
+            <p>food2</p>
+            <p>food3</p>
+          </div>
+          <div class="dessert menu-block">
+            <h2>デザート</h2>
+            <p>dessert1</p>
+            <p>dessert2</p>
+            <p>dessert3</p>
+          </div>
+          <div class="drink menu-block">
+            <h2>ドリンク</h2>
+            <p>drink1</p>
+            <p>drink2</p>
+            <p>drink3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="instagram section" id="instagram">
+      <div class="inner">
+        <div class="insta-title">
+          <h2 class="font1">Instagram</h2>
+        </div>
+        <div class="insta-all">
+          <!-- figure 画像をまとまりとして扱う -->
+          <figure class="insta-item">
+            <a href="https://www.instagram.com/">
+              <img src="img/coffee.jpeg" class="insta-img" alt="インスタ画像1">
+            </a>
+            <!-- figcaption　figureタグの中のコンテンツを文字で説明する -->
+            <figcaption class="insta-item-body">
+              <p>インスタ画像タイトル1</p>
+            </figcaption>
+          </figure>
+          <!-- figure 画像をまとまりとして扱う -->
+          <figure class="insta-item">
+            <a href="https://www.instagram.com/">
+              <img src="img/coffee.jpeg" class="insta-img" alt="インスタ画像2">
+            </a>
+            <!-- figcaption　figureタグの中のコンテンツを文字で説明する -->
+            <figcaption class="insta-item-body">
+              <p>インスタ画像タイトル2</p>
+            </figcaption>
+          </figure>
+          <!-- figure 画像をまとまりとして扱う -->
+          <figure class="insta-item">
+            <a href="https://www.instagram.com/">
+              <img src="img/coffee.jpeg" class="insta-img" alt="インスタ画像3">
+            </a>
+            <!-- figcaption　figureタグの中のコンテンツを文字で説明する -->
+            <figcaption class="insta-item-body">
+              <p>インスタ画像タイトル3</p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="insta-icon">
+          <a href="https://www.instagram.com/">
+            <img src="img/insta_icon.jpeg" class="insta-icon-img" alt="インスタアイコン">
+          </a>
+          <p>インスタグラムも是非チェックしてみて下さい！</p>
+        </div>
+      </div>
+    </section>
+    <section class="access section" id="access">
+      <div class="access-title">
+        <h2 class="font1">アクセス</h2>
+      </div>
+      <div class="map-all">
+        <img src="img/map.jpeg" class="map-img" alt="地図">
+        <div class="map-address">
+          <p>住所</p>
+        </div>
+      </div>
+    </section>
+    <section class="reserve section" id="reserve">
+      <div class="reserve-all">
+        <h2 class="font1">お問い合わせ</h2>
+      </div>
+      <div class="contact_wrap">
+        <p>ご予約は下記フォームより承ります。</p>
+      </div>
+      <form class="form" method="post">
+        <div>
+          <label for="name">氏名:</label>
+          <input type="text" id="name" name="user_name">
+        </div>
+        <div>
+          <label for="mail">メールアドレス:</label>
+          <input type="email" id="mail" name="user_mail">
+        </div>
+        <div>
+          <label for="tel">電話番号:</label>
+          <input type="tel" id="tel" name="user_tel">
+        </div>
+        <div>
+          <label for="datetime-local">予約日時:</label>
+          <input type="datetime-local" id="datetime-local" name="user_datetime-local">
+        </div>
+        <div>
+          <label for="msg">内容:</label>
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <div class="button_submit">
+          <button class="button" type="submit">送信</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="bottom">
+    <div class="inner">
+      <div class="copyright">
+        <small>© 2023 CODESTAR All rights reserved.</small>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+@charset "UTF-8";
+
+nav ul {
+  /*横並び*/
+  display: flex;
+  /* 各アイテムを均等に配置し各アイテムの両側に半分の大きさの間隔を置く */
+  justify-content: space-around;
+  background-color: #000;
+  /*余白 上下 左右*/
+  padding: 20px 70px;
+}
+
+nav ul li {
+  font-size: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.inner {
+  /*親要素（.top1）に対し、子要素（.top1-txt）のコンテンツを中央起点に配置する指定*/
+  justify-content: center;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+}
+
+/* top1親 */
+.top1 {
+  /*横並び*/
+  display: flex;
+  /*親要素（.top1）に対し、子要素（.top1-txt）のコンテンツを中央起点に配置する指定*/
+  justify-content: center;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  /*枠の外側の間隔 上下 左右 autoで中央*/
+  margin: 0 auto;
+}
+
+/* top1背景画像 */
+.top1-bg {
+  background-image: url(../img/cafe_1.png);
+  height: 100vh;
+  width: 100vw;
+  background-position: center;
+  /* 元画像の縦横比のまま、要素内で可能な限り大きくする */
+  background-size: cover;
+  /* 画像を繰り返し表示しない */
+  background-repeat: no-repeat;
+}
+
+/* top1テキスト */
+.top1-txt {
+  font-size: 100px;
+  text-shadow: 5px 5px #000;
+  color: #cac9b7;
+  text-decoration: none;
+}
+
+/* top2 親 */
+.top2 {
+  /*横並び*/
+  display: flex;
+  /*交差軸方向中央寄せ*/
+  align-items: center;
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  background-color: #dab6a376;
+}
+
+/* top2テキスト */
+.top2-txt {
+  /* テキストを左揃え */
+  text-align: left;
+  /* 上 | 右 | 下 | 左 */
+  padding: 5% 0% 0% 5%;
+  width: 50%;
+  height: 200px;
+}
+
+.top2-txt h2 {
+  font-size: x-large;
+}
+
+/* top2画像 */
+.top2-img {
+  width: 50%;
+  height: 50%;
+}
+
+.section {
+  /*余白 上下 左右*/
+  padding: 120px 0;
+}
+
+/*疑似クラス化(奇数)*/
+.section:nth-of-type(odd) {
+  background-color: #ece7e4a4;
+}
+
+/*疑似クラス化(奇数)*/
+.section:nth-of-type(even) {
+  background-color: #f3f8f1;
+}
+
+.font1 {
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  font-size: 60px;
+  font-weight: bold;
+  /*テキストの水平方向の字間のスペース*/
+  letter-spacing: 5px;
+  color: #555;
+  /*枠の外側の間隔 下*/
+  padding-bottom: 60px;
+}
+
+.menu-all {
+  /*横並び*/
+  display: flex;
+  /*親要素（.top1）に対し、子要素（.top1-txt）のコンテンツを中央起点に配置する指定*/
+  justify-content: center;
+}
+
+.menu-block {
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  width: 30%;
+}
+
+.menu-block h2 {
+  font-size: x-large;
+  margin-bottom: 20px;
+}
+
+.menu-block p {
+  font-size: large;
+  margin: 10px 0px;
+}
+
+.insta-all {
+  /*横並び*/
+  display: flex;
+  /*親要素（.top1）に対し、子要素（.top1-txt）のコンテンツを中央起点に配置する指定*/
+  justify-content: center;
+}
+
+.insta-item {
+  /*インラインコンテンツの水平方向の配置*/
+  text-align: center;
+  width: 30%;
+}
+
+.insta-img {
+  width: 80%;
+}
+
+.insta-icon {
+  margin: 50px 0px;
+}
+
+.insta-icon-img {
+  margin: 20px 0px;
+  width: 8%;
+}
+
+.map-all {
+  /*横並び*/
+  display: flex;
+  /*親要素（.top1）に対し、子要素（.top1-txt）のコンテンツを中央起点に配置する指定*/
+  justify-content: center;
+}
+
+.map-img {
+  width: 40%;
+  margin: 0% 15%;
+}
+
+.map-address {
+  padding-top: 50px;
+  width: 40%;
+}
+
+#contact {
+  background: rgb(241, 241, 241);
+}
+
+#contact p {
+
+  font-size: 30px;
+  padding: 30px 0px;
+}
+
+#contact h2 {
+  padding: 40px 0;
+}
+
+.contact_wrap {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form h1 {
+  font-size: 30px;
+}
+
+label {
+  display: inline-block;
+  width: 30%;
+  line-height: 2;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  border: solid #ddd 1px;
+  width: 65%;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 6px;
+}
+
+textarea {
+  vertical-align: top;
+  height: 200px;
+}
+
+.button_submit {
+  text-align: center;
+}
+
+.button {
+  padding: 10px 50px;
+  background-color: #555;
+  margin: 50px 0;
+  font-weight: bold;
+  border: none;
+  color: #fff;
+}
+
+.bottom {
+  background-color: #333;
+}
+
+.bottom .inner {
+  padding: 30px;
+}
+
+.copyright {
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+}
